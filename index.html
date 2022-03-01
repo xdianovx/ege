@@ -1,0 +1,3549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '366780721351525');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=366780721351525&ev=PageView&noscript=1"
+    /></noscript>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo logo">
+            <a href="#">
+              <img src="img/logo.png" alt="" />
+              <p class="logo__text">Образовательное частное учрежедние "Школа Эрудит"</p>
+            </a>
+          </div>
+
+          <nav class="header__nav">
+            <ul>
+              <li class="header__link scroll-to"><a href="#features">Преимущества</a></li>
+              <li class="header__link scroll-to"><a href="#choose">Результаты</a></li>
+              <li class="header__link scroll-to"><a href="#teachers">Преподаватели</a></li>
+              <li class="header__link scroll-to"><a href="#cost">Стоимость</a></li>
+              <li class="header__link scroll-to"><a href="#licenses">Лицензии</a></li>
+              <li class="header__link scroll-to"><a href="#accordition">Вопросы</a></li>
+              <li class="header__link scroll-to"><a href="#rewievs">Отзывы</a></li>
+            </ul>
+          </nav>
+
+          <button class="header__burger">
+            <span></span>
+          </button>
+
+          <div class="header__right">
+            <a class="header__phone" href="tel:+74996476002">+7 499 647 60 02 </a>
+            <a class="header__right_btn" href="#">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal modal__callback">
+      <div class="modal__wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close"><img src="img/close.svg" alt="" /></button>
+          <div class="modal__form">
+            <form class="modal__form" action="#">
+              <h2>Введите ваши данные <br />и нажмите заказать звонок</h2>
+              <input
+                class="form-control form_input"
+                name="name"
+                required
+                type="text"
+                placeholder="Введите ваше имя"
+              />
+              <input
+                class="form-control form_input phone"
+                name="phone"
+                required
+                type="tel"
+                placeholder="Введите телефон"
+              />
+              <button class="text-uppercase btn-block button" name="submit" type="submit">
+                Отправить
+              </button>
+              <p class="modal__policy">
+                Перед отправкой ознакомьтесь с нашей <a href="#">политикой конфиденциальности</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thanks modal">
+      <div class="modal__wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close"><img src="img/close.svg" alt="" /></button>
+          <img class="thanks__img" src="img/done.svg" alt="" />
+          <h2>СПАСИБО</h2>
+          <h3>Ваша заявка принята</h3>
+          <p>Наши специалисты свяжутся с вами в течении 24 часов</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrap">
+          <h2>Подготовка к ЕГЭ <br />на <span>максимальный</span> балл с экспертами</h2>
+          <p>На 37% эффективнее обычного репетитора</p>
+          <button class="button hero__button">Записаться</button>
+        </div>
+        <a href="#features" class="hero__arrow">
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle opacity="0.3" cx="32" cy="32" r="32" fill="#2C2A2E" />
+            <path
+              opacity="0.3"
+              d="M24 30L32 38L40 30"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="hero__image_mob">
+      <img src="img/hero-img.jpg" alt="" />
+    </div>
+
+    <section class="features anchor" id="features">
+      <div class="container">
+        <h2 class="title-main features__title"><span>Преимущества</span> «Школы Эрудит»</h2>
+        <div class="features__wrap">
+          <div class="features__left">
+            <div class="features__item">
+              <h3>Бесплатно</h3>
+              <p>
+                Проводим тестирование по предметам, определяем уровень знаний учеников, помогаем
+                выбрать группу нужного уровня.
+              </p>
+            </div>
+
+            <div class="features__item">
+              <h3>Безопасно</h3>
+              <p>
+                Закрытые и охраняемые здания и территории, оборудованные системой видеонаблюдения,
+                пожарной сигнализацией и прямой связью с Отделом внутренних дел.
+              </p>
+            </div>
+
+            <div class="features__item">
+              <h3>Проверено</h3>
+              <p>
+                Успешно готовим детей к экзаменам уже 27 лет на высокие баллы. Есть лицензия на
+                образовательную деятельность, благодаря которой родители могут получить налоговый
+                вычет.
+              </p>
+            </div>
+          </div>
+
+          <div class="features__center">
+            <img class="features__img_desk" src="img/features-img.png" alt="" />
+            <img class="features__img_mob" src="img/features-img-mob.jpg" alt="" />
+          </div>
+
+          <div class="features__right">
+            <div class="features__item">
+              <h3>Качественно</h3>
+              <p>
+                Наши педагоги – действующие эксперты ОГЭ и ЕГЭ. Многие годы успешно готовят учеников
+                на высокие баллы.
+              </p>
+            </div>
+
+            <div class="features__item">
+              <h3>Эффективно</h3>
+              <p>
+                Мы обеспечиваем комфортное обучение для наших учеников, создавая группы до 10
+                человек, согласно уровню знаний (базовый, углубленный).
+              </p>
+            </div>
+
+            <div class="features__item">
+              <h3>Понятно</h3>
+              <p>
+                Нет монотонных лекций. Обучение строится по принципу «Разобрали теорию – применили
+                на практике». Доступный метод подачи материала.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="query">
+      <div class="container">
+        <h2 class="title-main query__title">С какими запросами к нам приходят?</h2>
+
+        <div class="query__wrap">
+          <div class="tab__wrap">
+            <button class="button-tab">В школе не готовят</button>
+            <button class="button-tab active">Не устраивает репетитор</button>
+            <button class="button-tab">Нет мотивации</button>
+            <button class="button-tab">Хотим поступить в ВУЗ вне конкурса</button>
+            <button class="button-tab">Не знаем, что сдавать</button>
+          </div>
+          <div class="content__wrap">
+            <div class="content__item">
+              <img src="img/content/1.jpg" alt="" />
+              <div class="content__info">
+                <h3>В школе не готовят</h3>
+                <ul>
+                  <li class="content__li">
+                    В школе нет узкопрофильной подготовки к экзаменам. <br />Задания из ОГЭ/ЕГЭ
+                    разбираются только в теории.
+                  </li>
+                  <li class="content__li">
+                    Один преподаватель не справляется даже с дополнительной подготовкой, <br />
+                    если в классе более 20 учеников. У ребенка остаются вопросы, <br />на которые
+                    преподаватель не успевает ответить.
+                  </li>
+                  <li class="content__li">
+                    В рамках школьной программы не разбираются все нюансы экзамена, оформление
+                    заданий.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content__item">
+              <img src="img/content/2.jpg" alt="" />
+              <div class="content__info">
+                <h3>Не устраивает репетитор</h3>
+                <ul>
+                  <li class="content__li">
+                    В подготовке очень важна рабочая атмосфера. <br />В домашних условиях сложно
+                    сконцентрироваться <br />
+                    на учебе, много отвлекающих факторов.
+                  </li>
+                  <li class="content__li">
+                    При подготовке с репетитором родителю сложно оценить качество <br />
+                    и содержимое учебной программы. Репетитор может хорошо <br />
+                    восполнить школьные пробелы, но быть недостаточно осведомлённым в актуальных
+                    изменениях критериев экзамена.
+                  </li>
+                  <li class="content__li">
+                    В случае форс-мажора поиск нового репетитора, не уступающего <br />
+                    по качеству, занимает большое количество времени. Также ребенку <br />
+                    сложнее адаптироваться к новому педагогу.
+                  </li>
+
+                  <div class="content__li">
+                    По статистике стоимость академического часа у экспертов <br />
+                    ЕГЭ и ОГЭ не ниже 1500
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content__item">
+              <img src="img/content/3.jpg" alt="" />
+              <div class="content__info">
+                <h3>Нет мотивации</h3>
+                <ul>
+                  <li class="content__li">
+                    У ребенка потерян интерес к учебе. Он не осознает, <br />
+                    что в любой профессии (даже блогера) необходимы углубленные <br />
+                    знания по тому или иному предмету.
+                  </li>
+                  <li class="content__li">
+                    Школьный педагог предвзято относится к моему ребенку. <br />Ставит оценки вне
+                    зависимости от прогресса в успеваемости.
+                  </li>
+                  <li class="content__li">
+                    На основании своих успехов в школе ребенок не верит в то, <br />
+                    что способен сдать ОГЭ и ЕГЭ и поступить в ВУЗ.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content__item">
+              <img src="img/content/4.jpg" alt="" />
+              <div class="content__info">
+                <h3>Хотим поступить в ВУЗ вне конкурса</h3>
+                <ul>
+                  <li class="content__li">В каких олимпиадах участвовать?</li>
+                  <li class="content__li">Как участвовать в олимпиадах с проектными работами?</li>
+                  <li class="content__li">Как правильно подготовиться к олимпиадам школьников?</li>
+
+                  <li class="content__li">Репетитор не знает программу подготовки к олимпиадам.</li>
+                  <li class="content__li">Как быстро подготовиться к интернет-этапу олимпиад?</li>
+                  <li class="content__li">
+                    Какие дополнительные льготы можно получить к баллам ЕГЭ?
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content__item">
+              <img src="img/content/5.jpg" alt="" />
+              <div class="content__info">
+                <h3>Не знаем, что сдавать</h3>
+                <ul>
+                  <li class="content__li">Ребенок не определился с профессией</li>
+                  <li class="content__li">Сложности с выбором ВУЗа и предметами для поступления</li>
+                  <li class="content__li">Что выбрать: колледж или ВУЗ?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="query__cube"></div>
+    </section>
+
+    <div class="sale-form">
+      <div class="container">
+        <div class="sale-form__wrap">
+          <h3>Получите скидку 20% <br />на подготовку к ОГЭ/ЕГЭ</h3>
+          <form class="sale-form__form" action="">
+            <input type="text" placeholder="Имя" name="name" required />
+            <input type="tel" class="phone" placeholder="Телефон" name="phone" required />
+            <button class="button" type="submit">Записаться</button>
+            <p>
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+              соглашаетесь с Политикой конфиденциальности
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="why-us">
+      <div class="container">
+        <h2 class="title-main why-us__title">
+          Почему более 1000 родителей <span>выбрали «Школу Эрудит»</span>
+        </h2>
+        <div class="why-us__wrap">
+          <div class="why-us__item">
+            <img src="img/why-1.svg" alt="" />
+            <h4>Полный курс обучения</h4>
+            <p>
+              8 месяцев: 1 занятие в неделю по 2 ч<br />
+              15 мин (то есть 3 ак.ч.). Всего 32<br />
+              занятия (96 ак. ч. )
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-2.svg" alt="" />
+            <h4>Правильная подготовка</h4>
+            <p>
+              Подготовка идет равномерным темпом в<br />течение 8 месяцев,<br />
+              от простого к сложному.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-3.svg" alt="" />
+            <h4>Удобный график</h4>
+            <p>
+              Мы работаем 7 дней в неделю. <br />
+              Каждая семья может подобрать<br />
+              удобное время для занятий.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-4.svg" alt="" />
+            <h4>Единый центр</h4>
+            <p>
+              Подготовка к ОГЭ/ЕГЭ проходит <br />
+              по всем школьным предметам <br />
+              в одном образовательном центре.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-5.svg" alt="" />
+            <h4>Безопасность</h4>
+            <p>
+              У нас закрытые и охраняемые здания <br />
+              и территории, оборудованные системой <br />
+              видеонаблюдения, пожарной сигнализацией <br />
+              и прямой связью с Отделом внутренних дел.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-6.svg" alt="" />
+            <h4>Обратная связь</h4>
+            <p>
+              Учебная часть оперативно<br />
+              реагирует на все вопросы<br />
+              учеников и родителей.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-7.svg" alt="" />
+            <h4>Группы делятся</h4>
+            <p>
+              • по виду подготовки <span>(ОГЭ,ЕГЭ)</span> <br />• по классу
+              <span>(8-9 класс и 10-11)</span> <br />• по уровню знаний <br />
+              <span>(Базовые и Углубленные)</span>
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-8.svg" alt="" />
+            <h4>Уникальные условия</h4>
+            <p>
+              Работаем с нестандартными запросами: <br />
+              подготовка к сложным олимпиадам, <br />
+              группы обучения в летнее время, <br />
+              подготовка к международным экзаменам, <br />
+              дополнительным вступительным <br />
+              испытаниям в ВУЗ.
+            </p>
+          </div>
+
+          <div class="why-us__item">
+            <img src="img/why-9.svg" alt="" />
+            <h4>Лучшие преподаватели</h4>
+            <p>
+              Эксперты ОГЭ и ЕГЭ закладывают <br />
+              фундаментальные знания <br />
+              по предмету.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img src="img/why-triangle-1.svg" alt="" class="why-us__triangle why-us__triangle-1" />
+      <img src="img/why-triangle-2.svg" alt="" class="why-us__triangle why-us__triangle-2" />
+      <img src="img/why-triangle-3.svg" alt="" class="why-us__triangle why-us__triangle-3" />
+      <img src="img/why-triangle-4.svg" alt="" class="why-us__triangle why-us__triangle-4" />
+      <img src="img/why-triangle-5.svg" alt="" class="why-us__triangle why-us__triangle-5" />
+      <img src="img/why-triangle-6.svg" alt="" class="why-us__triangle why-us__triangle-6" />
+    </section>
+
+    <section class="quality">
+      <div class="container">
+        <p class="quality__sup-title">как мы добились высочайшего качества обучения</p>
+        <h2 class="title-main quality__title">
+          Качественная подготовка состоит <span>из нескольких компонентов</span>
+        </h2>
+        <div class="quality__wrap">
+          <div class="quality__item">
+            <span>01</span>
+            <img src="img/quality-1.svg" alt="" />
+            <h3>Родители</h3>
+            <p>
+              Родители - самые близкие люди для ученика, именно <br class="quality__br" />
+              они обладают авторитетом и поддержкой, умеют правильно объяснить ребенку важность
+              подготовки <br class="quality__br" />
+              к ответственному этапу в жизни ребенка. Контролируют выполнение ребенком домашнего
+              задания.
+            </p>
+          </div>
+
+          <div class="quality__item">
+            <span>02</span>
+            <img src="img/quality-2.svg" alt="" />
+            <h3>Ученик</h3>
+            <p>
+              Ученик должен серьезно отнестись к подготовке. <br class="quality__br" />
+              Самое главное, что от него требуется, это посещение <br class="quality__br" />
+              всех занятий, внимательность на уроке и выполнение домашнего задания. При
+              возникновении вопросов — своевременно обращаться к преподавателю.
+            </p>
+          </div>
+
+          <div class="quality__item">
+            <span>03</span>
+            <img src="img/quality-3.svg" alt="" />
+            <h3>Преподаватель</h3>
+            <p>
+              Очень важно готовиться с преподавателем, <br class="quality__br" />
+              который знает все «подводные камни» экзамена, специфику оформления заданий. Может
+              доступным <br class="quality__br" />
+              и понятным языком донести эти знания до ученика, <br class="quality__br" />
+              а также поддерживает и помогает ему избавиться <br class="quality__br" />
+              от сомнений.
+            </p>
+          </div>
+
+          <div class="quality__item">
+            <span>04</span>
+            <img src="img/quality-4.svg" alt="" />
+            <h3>Учебная часть</h3>
+            <p>
+              Администраторы учебной части - это связующее <br class="quality__br" />
+              звено между родителем, учеником и преподавателем. <br class="quality__br" />
+              Именно они оперативно передают важную <br class="quality__br" />
+              информацию для того, чтобы процесс подготовки был <br class="quality__br" />
+              эффективным. А также решают все вопросы родителей <br class="quality__br" />
+              и учеников, которые возникают в процессе обучения.
+            </p>
+          </div>
+
+          <div class="quality__circle">
+            <div class="quality__circle_item quality__circle_item-1">
+              <img src="img/quality-round-1.svg" alt="" />
+            </div>
+            <div class="quality__circle_item quality__circle_item-2">
+              <img src="img/quality-round-2.svg" alt="" />
+            </div>
+            <div class="quality__circle_item quality__circle_item-3">
+              <img src="img/quality-round-3.svg" alt="" />
+            </div>
+            <div class="quality__circle_item quality__circle_item-4">
+              <img src="img/quality-round-4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="finish">
+      <div class="container">
+        <h2 class="title-main finish-title">
+          <span>Более 1000 учеников</span> закончили «Школу Эрудит» и поступили <br />
+          в ВУЗы на бюджет
+        </h2>
+        <div class="finish__wrap">
+          <div class="finish__item">
+            <h3>28</h3>
+            <p>лет обучаем детей. Наши выпускники поступают на бюджет в ведущие ВУЗы.</p>
+          </div>
+          <div class="finish__item">
+            <h3>8</h3>
+            <p>месяцев необходимо для полноценной подготовки к экзаменам.</p>
+          </div>
+          <div class="finish__item">
+            <h3>90%</h3>
+            <p>наших учеников поступают на бюджет в желаемый ВУЗ.</p>
+          </div>
+          <div class="finish__item">
+            <h3>80+</h3>
+            <p>результат каждого второго ученика «Школы Эрудит».</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="choose anchor" id="choose">
+      <div class="container">
+        <div class="choose__wrap">
+          <div class="choose__left">
+            <h3>Выберите предмет</h3>
+
+            <div class="select">
+              <div class="select__header">
+                <div class="choose__select">
+                  <img src="img/sub-1.svg" alt="" />
+                  <p>Русский язык</p>
+                </div>
+                <div class="select__icon"><img src="img/select.svg" alt="" /></div>
+              </div>
+
+              <div class="select__body">
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-1.svg" alt="" />
+                  <p>Русский язык</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-2.svg" alt="" />
+                  <p>Математика</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-3.svg" alt="" />
+                  <p>Обществознание</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-4.svg" alt="" />
+                  <p>Физика</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-5.svg" alt="" />
+                  <p>Химия</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-6.svg" alt="" />
+                  <p>Биология</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-7.svg" alt="" />
+                  <p>Информатика</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-8.svg" alt="" />
+                  <p>История</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-9.svg" alt="" />
+                  <p>Иностранный язык</p>
+                </div>
+                <div class="choose__select choose__select_item">
+                  <img src="img/sub-10.svg" alt="" />
+                  <p>Литература</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>63</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">52</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">83</h4>
+                <span>+31</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">96</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>49</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">43</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">88</h4>
+                <span>+45</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">100</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>56</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">55</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">81</h4>
+                <span>+26</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">98</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>54</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">41</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">87</h4>
+                <span>+46</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">100</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>68</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">57</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">82</h4>
+                <span>+25</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">96</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>60</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">56</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">83</h4>
+                <span>+27</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">96</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>63</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">48</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">86</h4>
+                <span>+38</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">94</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>52</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">49</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">88</h4>
+                <span>+39</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">100</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>43</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">44</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">81</h4>
+                <span>+37</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">98</h4>
+              </div>
+            </div>
+
+            <div class="choose__options">
+              <div class="choose__option">
+                <p>
+                  средний балл <br />
+                  по Москве
+                </p>
+                <h4>55</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ДО ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_red">47</h4>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  СРЕДНИЙ БАЛЛ НАШИХ <br />
+                  УЧЕНИКОВ ПОСЛЕ ЗАНЯТИЙ
+                </p>
+                <h4 class="choose__option_green">83</h4>
+                <span>+36</span>
+              </div>
+
+              <div class="choose__option">
+                <p>
+                  МАКСИМАЛЬНЫЙ БАЛЛ <br />
+                  НАШИХ УЧЕНИКОВ
+                </p>
+                <h4 class="choose__option_num">96</h4>
+              </div>
+            </div>
+          </div>
+          <div class="choose__right">
+            <p class="choose__sup-title">результаты учеников «школы эрудит»</p>
+            <h2 class="title-main choose__title">
+              <span
+                >На 37 баллов <br />
+                в среднем</span
+              >
+              наши ученики увеличили результаты ЕГЭ
+            </h2>
+            <button class="button button__choose">Хочу так же</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="graduates">
+      <div class="container">
+        <div class="graduates__wrap">
+          <div class="graduates__left">
+            <h2 class="title-main"><span>Наши выпускники</span> учатся здесь</h2>
+            <p class="graduates__subtitle">
+              Ежегодно наши ученики поступают на бюджет в ведущие ВУЗы России. Среди них:
+            </p>
+
+            <div class="graduates__items">
+              <div class="graduates__item">
+                <div class="graduates__item_img">
+                  <img src="img/graduates-icon-1.png" alt="" />
+                </div>
+                <p class="graduates__item-mob">
+                  Московский государственный университет имени М.В.Ломоносова
+                </p>
+                <div class="graduates__item_info">
+                  <p>Московский государственный университет имени М.В.Ломоносова</p>
+                </div>
+              </div>
+
+              <div class="graduates__item">
+                <div class="graduates__item_img">
+                  <img src="img/graduates-icon-2.png" alt="" />
+                </div>
+                <p class="graduates__item-mob">
+                  Московский государственный технический университет имени Н.Э. Баумана
+                </p>
+                <div class="graduates__item_info">
+                  <p>Московский государственный технический университет имени Н.Э. Баумана</p>
+                </div>
+              </div>
+
+              <div class="graduates__item">
+                <div class="graduates__item_img">
+                  <img src="img/graduates-icon-3.png" alt="" />
+                </div>
+                <p class="graduates__item-mob">
+                  Национальный исследовательский университет «Высшая школа экономики»
+                </p>
+                <div class="graduates__item_info">
+                  <p>Национальный исследовательский университет «Высшая школа экономики»</p>
+                </div>
+              </div>
+
+              <div class="graduates__item">
+                <div class="graduates__item_img">
+                  <img src="img/graduates-icon-4.png" alt="" />
+                </div>
+                <p class="graduates__item-mob">
+                  Российская академия народного хозяйства и государственной службы при Президенте РФ
+                </p>
+                <div class="graduates__item_info">
+                  <p>
+                    Российская академия народного хозяйства и государственной службы при Президенте
+                    РФ
+                  </p>
+                </div>
+              </div>
+
+              <div class="graduates__item">
+                <div class="graduates__item_img">
+                  <img src="img/graduates-icon-5.png" alt="" />
+                </div>
+                <p class="graduates__item-mob">
+                  Московский государственный институт международных отношений
+                </p>
+                <div class="graduates__item_info">
+                  <p>Московский государственный институт международных отношений</p>
+                </div>
+              </div>
+              <div class="graduates__item graduates__item-last">
+                <p>Мы гордимся результатами наших учеников</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="graduates__right" src="img/2.png" alt="" />
+    </section>
+
+    <section class="selection">
+      <div class="container">
+        <div class="selection__title">
+          <div class="selection__top_left">
+            <h2 class="selection__title_title title-main">
+              Отбор преподавателей <br />
+              в «Школу Эрудит»
+            </h2>
+            <div class="teacher__avatars">
+              <img src="img/sel-teach-1.jpg" alt="" />
+              <img src="img/sel-teach-2.jpg" alt="" />
+              <img src="img/sel-teach-3.jpg" alt="" />
+              <img src="img/sel-teach-4.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="selection__right">
+            <h5>Мы отвечаем за качество подготовки Ваших детей</h5>
+            <p>
+              Подбор правильных преподавателей - залог успеха любого образовательного комплекса.
+              Только 3% кандидатов становятся преподавателями «Школы Эрудит».
+            </p>
+          </div>
+        </div>
+
+        <div class="selection__wrap">
+          <div class="selection__item">
+            <div class="selection__item_img">
+              <img src="img/selection-1.svg" alt="" />
+            </div>
+            <div class="selection__item_info">
+              <h5>Обратная связь</h5>
+              <p>
+                В процессе отбора все наши преподаватели проходят <br />
+                через серию демо-уроков, на которых мы выявляем <br />
+                их умение находить общий язык с учениками <br />
+                и интересно преподносить материал.
+              </p>
+            </div>
+          </div>
+
+          <div class="selection__item">
+            <div class="selection__item_img">
+              <img src="img/selection-2.svg" alt="" />
+            </div>
+            <div class="selection__item_info">
+              <h5>Экспертность</h5>
+              <p>
+                Любой наш преподаватель – подтвержденный эксперт ЕГЭ или ОГЭ. Они прошли
+                тестирование <br />
+                в независимой комиссии МЦКО и доказали, <br />
+                что знают свой предмет на все 100 процентов.
+              </p>
+            </div>
+          </div>
+
+          <div class="selection__item">
+            <div class="selection__item_img">
+              <img src="img/selection-3.svg" alt="" />
+            </div>
+            <div class="selection__item_info">
+              <h5>Опыт работы</h5>
+              <p>
+                Стаж наших преподавателей не менее 8 лет. <br />
+                Они умеют работать с группами учеников. <br />
+                Поддерживают дисциплину и интерес к предмету. <br />
+                У нас нет вчерашних студентов и аспирантов, <br />
+                для которых занятия - всего лишь подработка.
+              </p>
+            </div>
+          </div>
+
+          <div class="selection__item">
+            <div class="selection__item_img">
+              <img src="img/selection-4.svg" alt="" />
+            </div>
+            <div class="selection__item_info">
+              <h5>Результаты</h5>
+              <p>
+                Мы гордимся результатами наших учеников, <br />
+                ведь более 1000 выпускников поступили <br />
+                в ведущие ВУЗы России. Отзывы о работе наших <br />
+                педагогов исключительно положительные.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="teachers anchor" id="teachers">
+      <div class="container">
+        <h2 class="title-main teachers__title">Наши преподаватели</h2>
+        <div class="teachers__wrap">
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/rastatueva-svetlana-gennadievna.png" alt="" />
+            </div>
+            <h5>Растатуева Светлана Геннадьевна</h5>
+            <p>Кандидат филологических наук.</p>
+            <button class="button slider__button button__teacher_4">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/shilina-tatyana-aleksandrovna.png" alt="" />
+            </div>
+            <h5>Шилина Татьяна Александровна</h5>
+            <p>Кандидат исторических наук.</p>
+            <button class="button slider__button button__teacher_5">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/katalikov-mikhail-vladimirovich.png" alt="" />
+            </div>
+            <h5>Каталиков Михаил Владимирович</h5>
+            <p>Математика, информатика</p>
+            <button class="button slider__button button__teacher_6">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/tsysar-natalya-ivanovna.png" alt="" />
+            </div>
+            <h5>Цысарь Наталья Ивановна</h5>
+            <p>Литература, Русский язык</p>
+            <button class="button slider__button button__teacher_7">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/barylnikova-zhanna-prokofevna.png" alt="" />
+            </div>
+            <h5>Барыльникова Жанна Прокофьевна</h5>
+            <p>Математика</p>
+            <button class="button slider__button button__teacher_8">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/yarovikova-yuliya-vladimirovna.png" alt="" />
+            </div>
+            <h5>Яровикова Юлия Владимировна</h5>
+            <p>Английский язык</p>
+            <button class="button slider__button button__teacher_9">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/kolobova-anastasiya-aleksandrovna.png" alt="" />
+            </div>
+            <h5>Колобова Анастасия Александровна</h5>
+            <p>Английский язык</p>
+            <button class="button slider__button button__teacher_10">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/babkina-irina-vladimirovna.png" alt="" />
+            </div>
+            <h5>Бабкина Ирина Владимировна</h5>
+            <p>Биология, Химия</p>
+            <button class="button slider__button button__teacher_11">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/selkov-sergej-vladimirovich.png" alt="" />
+            </div>
+            <h5>Сельков Сергей Владимирович</h5>
+            <p>Математика</p>
+            <button class="button slider__button button__teacher_12">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/kogan-mikhail-ehduardovich.png" alt="" />
+            </div>
+            <h5>Коган Михаил Эдуардович</h5>
+            <p>Математика, Физика</p>
+            <button class="button slider__button button__teacher_13">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/vlasov-i-s.png" alt="" />
+            </div>
+            <h5>
+              Власов Иван <br />
+              Сергеевич
+            </h5>
+            <p>Информатика</p>
+            <button class="button slider__button button__teacher_14">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/shakina-a-v.png" alt="" />
+            </div>
+            <h5>Шакина Анжелика Владимировна</h5>
+            <p>Математика</p>
+            <button class="button slider__button button__teacher_15">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/poleva-anna-nikolaevna.png" alt="" />
+            </div>
+            <h5>Полева Анна Николаевна</h5>
+            <p>Английский язык</p>
+            <button class="button slider__button button__teacher_16">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/proshchina-yuliya-vasilevna.png" alt="" />
+            </div>
+            <h5>Прощина Юлия Васильевна</h5>
+            <p>Обществознание</p>
+            <button class="button slider__button button__teacher_17">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/nekrasova-nadezhda-anatolevna.png" alt="" />
+            </div>
+            <h5>Некрасова Надежда Анатольевна</h5>
+            <p>Английский язык</p>
+            <button class="button slider__button button__teacher_18">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/yarochkin-aleksej-gennadevich.png" alt="" />
+            </div>
+            <h5>Ярочкин Алексей Геннадьевич</h5>
+            <p>География</p>
+            <button class="button slider__button button__teacher_19">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/no_photo.png" alt="" />
+            </div>
+            <h5>Смирнова Наталья Вадимовна</h5>
+            <p>Литература, русский язык</p>
+            <button class="button slider__button button__teacher_20">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/shcherbakova-svetlana-nikolaevna.png" alt="" />
+            </div>
+            <h5>Щербакова Светлана Николаевна</h5>
+            <p>Математика</p>
+            <button class="button slider__button button__teacher_21">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/rukosueva-nataliya-vadimovna.png" alt="" />
+            </div>
+            <h5>Рукосуева Наталия Вадимовна</h5>
+            <p>Химия</p>
+            <button class="button slider__button button__teacher_22">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/divakova-marina-vladimirovna.png" alt="" />
+            </div>
+            <h5>Дивакова Марина Владимировна</h5>
+            <p>Русский язык</p>
+            <button class="button slider__button button__teacher_23">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/zolotarev-dmitrij-nikolaevich.png" alt="" />
+            </div>
+            <h5>Золотарев Дмитрий Николаевич</h5>
+            <p>Математика</p>
+            <button class="button slider__button button__teacher_24">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/no_photo.png" alt="" />
+            </div>
+            <h5>Тараканова Елена Камильевна</h5>
+            <p>Русский язык и русский язык как иностранный</p>
+            <button class="button slider__button button__teacher_25">Подробнее</button>
+          </div>
+
+          <div class="teacher__item">
+            <div class="teacher__item_img">
+              <div class="teacher__item_block"></div>
+              <img src="img/egelskaya-l-a.png" alt="" />
+            </div>
+            <h5>Егельская Людмила Александровна</h5>
+            <p>Химия</p>
+            <button class="button slider__button button__teacher_26">Подробнее</button>
+          </div>
+        </div>
+        <div class="teacher__arrows"></div>
+      </div>
+    </section>
+
+    <div class="modal modal__teacher_1 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_1">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/teacher-1.png" alt="" />
+              <h5>Бабенко Владимир Георгиевич</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Русский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Русскому языку</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Старший преподаватель кафедры русского языка Финансового университета при
+                  Правительстве Российской Федерации.
+                </li>
+                <li class="content__li">
+                  Руководитель программы для студентов Венецианского университета «Ка- Фоскари».
+                </li>
+                <li class="content__li">Максимальный балл у учеников – 100</li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_2 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_2">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/teacher-2.png" alt="" />
+              <h5>Абизов Евгений Анатольевич</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Русский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Русскому языку</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Старший преподаватель кафедры русского языка Финансового университета при
+                  Правительстве Российской Федерации.
+                </li>
+                <li class="content__li">
+                  Руководитель программы для студентов Венецианского университета «Ка- Фоскари».
+                </li>
+                <li class="content__li">Максимальный балл у учеников – 100</li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_3 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_3">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/teacher-3.png" alt="" />
+              <h5>Баранов Евгений Викторович</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Эксперт ОГЭ/ЕГЭ</h3>
+
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Русскому языку</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Старший преподаватель кафедры русского языка Финансового университета при
+                  Правительстве Российской Федерации.
+                </li>
+                <li class="content__li">
+                  Руководитель программы для студентов Венецианского университета «Ка- Фоскари».
+                </li>
+                <li class="content__li">Максимальный балл у учеников – 100</li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_4 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_4">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/rastatueva-svetlana-gennadievna.png" alt="" />
+              <h5>Растатуева Светлана Геннадьевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Русский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Русскому языку</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Старший преподаватель кафедры русского языка Финансового университета при
+                  Правительстве Российской Федерации.
+                </li>
+                <li class="content__li">
+                  Руководитель программы для студентов Венецианского университета «Ка- Фоскари».
+                </li>
+                <li class="content__li">Максимальный балл у учеников – 100</li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_5 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_5">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/shilina-tatyana-aleksandrovna.png" alt="" />
+              <h5>Шилина Татьяна Александровна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> История/Обществознание</h3>
+
+              <h4><span>Педагогический стаж:</span> 23 года</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Истории, ЕГЭ/ОГЭ по Обществознанию</h4>
+
+              <ul>
+                <li class="content__li">Кандидат исторических наук.</li>
+                <li class="content__li">Учитель первой квалификационной категории.</li>
+                <li class="content__li">
+                  Учитель (преподаватель) истории, обществознания, права, экономики военного вуза г.
+                  Вольска Саратовской области, средней общеобразовательной школы 17 г. Вольска,
+                  частной школы «Мир знаний» Московской области Петрово – Дальнее.
+                </li>
+                <li class="content__li">Победитель конкурса «Учитель года».</li>
+                <li class="content__li">
+                  Разработчик авторской программы подготовки к ЕГЭ по обществознанию и истории.
+                </li>
+                <li class="content__li">
+                  Автор методических пособий для школьников и студентов. Опыт работы членом
+                  экспертной комиссии ЕГЭ.
+                </li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+
+                <li class="content__li">Максимальный балл у учеников: 100</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_6 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_6">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/katalikov-mikhail-vladimirovich.png" alt="" />
+              <h5>Каталиков Михаил Владимирович</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Математика/Информатика</h3>
+              <h4><span>Педагогический стаж:</span> 11 лет</h4>
+              <ul>
+                <li class="content__li">Образование: МГУ-МГОУ</li>
+                <li class="content__li">
+                  Многократный призер областных олимпиад по математике, 4-й Соросовской олимпиады
+                </li>
+                <li class="content__li">Высокие показатели сдачи 2020г матем – 99, информ -97</li>
+                <li class="content__li">
+                  Подтвержденный эксперт 2020 (результат в комиссии МЦКО - 100)
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_7 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_7">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/tsysar-natalya-ivanovna.png" alt="" />
+              <h5>Цысарь Наталья Ивановна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Литература, Русский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 26 лет</h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Литературе/Русский язык</h4>
+
+              <ul>
+                <li class="content__li">Учитель высшей квалификационной категории.</li>
+                <li class="content__li">Опыт работы членом экспертной комиссии ЕГЭ.</li>
+                <li class="content__li">
+                  Победитель конкурса «Лучший учитель и преподаватель русского языка», дипломант I
+                  степени Всероссийского конкурса «Педагогические инновации».
+                </li>
+                <li class="content__li">Разработчик интерактивных учебных материалов.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">Максимальный балл у учеников 100.</li>
+                <li class="content__li">Разработчик интерактивных учебных материалов.</li>
+                <li class="content__li">Разработчик интерактивных учебных материалов.</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_8 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_8">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/barylnikova-zhanna-prokofevna.png" alt="" />
+              <h5>Барыльникова Жанна Прокофьевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>математика</h3>
+
+              <h4><span>Педагогический стаж:</span> 28 лет</h4>
+              <h4>
+                <span>Образование:</span> Московский экономико-статистический институт и МГПУ,
+                профессиональная переподготовка с присвоением квалификации «Преподаватель
+                информатики и математики».
+              </h4>
+
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ математика</h4>
+
+              <ul>
+                <li class="content__li">Учитель высшей квалификационной категории.</li>
+                <li class="content__li">Действующий эксперт ОГЭ/ЕГЭ</li>
+                <li class="content__li">Победитель конкурса «Грант Москвы»</li>
+                <li class="content__li">
+                  Победитель межпредметной олимпиады учителей г. Москвы 2016г.
+                </li>
+                <li class="content__li">
+                  Разработчик методик по работе с одаренными детьми. Готовит членов региональной
+                  комиссии по математике по проверке выполнения заданий с развернутым ответом
+                  экзаменационных работ ЕГЭ.
+                </li>
+                <li class="content__li">Максимальный балл у учеников 100.</li>
+                <li class="content__li">Максимальный балл на экзамене у учеников: 90</li>
+                <li class="content__li">Число победителей и призеров олимпиад: 6</li>
+                <li class="content__li">Постоянно проходит курсы повышения квалификации.</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_9 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_9">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/yarovikova-yuliya-vladimirovna.png" alt="" />
+              <h5>Яровикова Юлия Владимировна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>английский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 18 лет</h4>
+              <h4><span>Образование:</span> ХГПУ</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук, доцент</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ</li>
+                <li class="content__li">Член Проверочной комиссии Олимпиады</li>
+                <li class="content__li">
+                  Автор более 20 научных публикаций, 2 учебно-методических пособий на английском
+                  языке для студентов, дистанционного курса по подготовке школьников к олимпиаде по
+                  английскому языку, а также курсов повышения квалификации для научно-педагогических
+                  работников вуза и педагогов образовательных учреждений
+                </li>
+                <li class="content__li">
+                  Награждена почетными грамотами и благодарностями, в том числе грамотами Русского
+                  географического общества и Министерства образования и науки.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_10 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_10">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/kolobova-anastasiya-aleksandrovna.png" alt="" />
+              <h5>Колобова Анастасия Александровна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>английский язык</h3>
+
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+              <h4><span>Образование:</span> ХГПУ</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук, доцент</li>
+                <li class="content__li">Сертификат CPE (grade A)2017 г.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ устной и письменной части</li>
+                <li class="content__li">Председатель Проверочной комиссии Олимпиады</li>
+                <li class="content__li">
+                  Награждена почетными грамотами и благодарностями, в том числе грамотами Русского
+                  географического общества и Министерства образования и науки.
+                </li>
+                <li class="content__li">
+                  Создатель авторского курса на материале аутентичных художественных произведений
+                  (расширение словарного запаса + неиссякаемый материал для разговора на английском
+                  для Upper-Intermediate и Proficiency
+                </li>
+                <li class="content__li">
+                  Подготовка к IELTS, кембриджским экзаменам (KET, PET, FCE. CAE. CPE) и BEC
+                </li>
+                <li class="content__li">
+                  Автор научных публикаций, статей, создатель учебника – хрестоматии.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_11 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_11">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/babkina-irina-vladimirovna.png" alt="" />
+              <h5>Бабкина Ирина Владимировна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Биология, Химия</h3>
+
+              <h4><span>Педагогический стаж:</span> 10 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Биологии ЕГЭ/ОГЭ по Химии</h4>
+
+              <ul>
+                <li class="content__li">Учитель биологии высшей квалификационной категории</li>
+                <li class="content__li">Победитель городского конкурса «Учитель Года»</li>
+                <li class="content__li">Автор методических пособий для школьников и студентов</li>
+                <li class="content__li">Разработчик интерактивных авторских курсов по биологии.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">Максимальный балл у учеников: 93.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_12 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_12">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/selkov-sergej-vladimirovich.png" alt="" />
+              <h5>Сельков Сергей Владимирович</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Математика</h3>
+              <h4><span>Педагогический стаж:</span> 28 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ по Математике</h4>
+
+              <ul>
+                <li class="content__li">Кандидат технических наук.</li>
+                <li class="content__li">
+                  Автор более 20 научных работ по различным разделам математики, а также
+                  методических пособий для школьников и студентов.
+                </li>
+                <li class="content__li">Максимальный балл у учеников 94.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_13 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_13">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/kogan-mikhail-ehduardovich.png" alt="" />
+              <h5>Коган Михаил Эдуардович</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Математика, Физика</h3>
+              <h4><span>Педагогический стаж:</span> 10 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Математике/Физике</h4>
+
+              <ul>
+                <li class="content__li">
+                  Кандидат технических наук, доцент
+                  <div class=""></div>
+                </li>
+                <li class="content__li">Преподаватель курсов МГТУ им. Н.Э. Баумана.</li>
+                <li class="content__li">
+                  Автор методических пособий для школьников и студентов, видео уроков «Крутой
+                  математик».
+                </li>
+                <li class="content__li">Максимальный балл у учеников: 98 математика, 94 физика.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_14 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_14">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/vlasov-i-s.png" alt="" />
+              <h5>Власов Иван Сергеевич</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span>Информатика</h3>
+              <h4><span>Педагогический стаж:</span> 16 лет</h4>
+              <h4><span>Курсы подготовки:</span> ОГЭ</h4>
+
+              <ul>
+                <li class="content__li">Учитель информатики ГБОУ Школы №1212.</li>
+                <li class="content__li">
+                  Разработчик интерактивных авторских курсов по информатике.
+                </li>
+                <li class="content__li">Максимальный балл у учеников 89.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+                <li class="content__li">Постоянно повышает квалификацию на современных курсах.</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_15 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_15">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/shakina-a-v.png" alt="" />
+              <h5>Шакина Анжелика Владимировна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Математика</h3>
+              <h4><span>Педагогический стаж:</span> 26 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Математике</h4>
+
+              <ul>
+                <li class="content__li">
+                  Кандидат физико-математических наук, учитель высшей категории, кандидат
+                  педагогических наук, доцент.
+                </li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Разработчик авторских интерактивных курсов.</li>
+                <li class="content__li">Максимальный балл у учеников 94.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_16 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_16">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/poleva-anna-nikolaevna.png" alt="" />
+              <h5>Полева Анна Николаевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Английский язык</h3>
+              <h4><span>Педагогический стаж:</span> 30 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Английскому языку</h4>
+
+              <ul>
+                <li class="content__li">
+                  Старший преподаватель кафедры «Специальная лингвистическая подготовка»
+                  Национального исследовательского ядерного университета (МИФИ).
+                </li>
+                <li class="content__li">Автор методических пособий для школьников и студентов.</li>
+                <li class="content__li">Разработчик интерактивных курсов по английскому языку.</li>
+                <li class="content__li">
+                  Автор методических разработок по лексике и грамматике английского языка для
+                  школьников и студентов.
+                </li>
+                <li class="content__li">
+                  Разработчик интерактивных авторских курсов по подготовке к ЕГЭ.
+                </li>
+                <li class="content__li">Максимальный балл учеников: 98.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">Постоянно повышает квалификацию на современных курсах.</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_17 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_17">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/proshchina-yuliya-vasilevna.png" alt="" />
+              <h5>Прощина Юлия Васильевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> Обществознание</h3>
+              <h4><span>Педагогический стаж:</span> 12 лет</h4>
+              <h4><span>Курсы подготовки:</span> ЕГЭ/ОГЭ по Обществознанию</h4>
+
+              <ul>
+                <li class="content__li">
+                  Учитель первой квалификационной категории. Учитель обществознания ГБОУ Лицея
+                  №1501.
+                </li>
+                <li class="content__li">
+                  Победитель городского конкурса «Лучшая методическая разработка 2014 года
+                  профсоюзного урока».
+                </li>
+                <li class="content__li">
+                  Автор многочисленных публикаций методического материала в электронных СМИ.
+                </li>
+                <li class="content__li">
+                  Автор методических разработок подготовки к ЕГЭ по обществознанию.
+                </li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ.</li>
+                <li class="content__li">Максимальный балл у учеников: 92</li>
+                <li class="content__li">Количество призеров/победителей олимпиад: 7</li>
+                <li class="content__li">
+                  Опытный педагог по подготовке к вступительным экзаменам.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_18 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_18">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/nekrasova-nadezhda-anatolevna.png" alt="" />
+              <h5>Некрасова Надежда Анатольевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> английский язык</h3>
+              <h4><span>Педагогический стаж:</span> 40 лет</h4>
+              <h4><span>Образование:</span> МГПИ ИМ. В.И. ЛЕНИНА</h4>
+
+              <ul>
+                <li class="content__li">
+                  Старший преподаватель Кафедры №62 (Специальная Лингвистическая Подготовка) НИЯУ
+                  МИФИ Института Международных Отношений.
+                </li>
+                <li class="content__li">Преподаватель высшей квалификационной категории.</li>
+                <li class="content__li">Автор ряда учебных пособий для студентов НИЯУ МИФИ.</li>
+                <li class="content__li">
+                  Автор методических разработок подготовки к ЕГЭ по обществознанию.
+                </li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ 2020г</li>
+                <li class="content__li">Готовит к поступлению в лингвистические вузы</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_19 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_19">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/yarochkin-aleksej-gennadevich.png" alt="" />
+              <h5>Ярочкин Алексей Геннадьевич</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> география</h3>
+              <h4><span>Педагогический стаж:</span> 5 лет</h4>
+              <h4><span>Образование:</span> МГПУ</h4>
+
+              <ul>
+                <li class="content__li">Учитель первой квалификационной категории.</li>
+                <li class="content__li">Имеет призера олимпиады 2019-2020</li>
+                <li class="content__li">Эксперт егэ 2019г</li>
+                <li class="content__li">
+                  Финалист окружного корнкурса «Молодой Педагог Москвы-2009»
+                </li>
+                <li class="content__li">
+                  участник смен форума «Селигер-2014» в номинации «Учитель Будущего»; Грамота за
+                  добросовестный труд в организации мероприятий Совета молодых педагогов округа и
+                  учителей географии (2011 г.)
+                </li>
+                <li class="content__li">
+                  Удостоверение о прохождении курса «Современные инструменты и тактики преподавания
+                  в очной и дистанционной формах обучения в ВУЗах и ССУЗах» (2016 г.)
+                </li>
+                <li class="content__li">
+                  Сертификат программы «Активный учитель» сайта UCHI.RU как участника, широко
+                  использующего цифровые образовательные ресурсы и современные технологии обучения
+                  (2020 г.)
+                </li>
+                <li class="content__li">
+                  Благодарность управления образования г.Мытищи /МО/ за организацию подготовительных
+                  курсов для выпускников в 2019-2020 учебном году
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_20 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_20">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/no_photo.png" alt="" />
+              <h5>Смирнова Наталья Вадимовна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> литература, русский язык</h3>
+              <h4><span>Педагогический стаж:</span> 20 лет</h4>
+              <h4>
+                <span>Образование:</span> МГОПУ ( Педагогика и психология дошк. и нач. кл) уч. нач.
+                кл. МИОО (Филология) уч. рус и лит
+              </h4>
+
+              <ul>
+                <li class="content__li">Учитель Высшей категории</li>
+                <li class="content__li">Эксперт егэ 2015г</li>
+                <li class="content__li">Имеет призеров олимпиад 2019 г</li>
+                <li class="content__li">Максимальный набранный балл у учеников - 100б</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_21 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_21">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/shcherbakova-svetlana-nikolaevna.png" alt="" />
+              <h5>Щербакова Светлана Николаевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> математика</h3>
+              <h4><span>Педагогический стаж:</span> 30 лет</h4>
+              <h4><span>Образование:</span> МОПУ им. Крупской</h4>
+
+              <ul>
+                <li class="content__li">2018г РАНХиГС повышение квалификации</li>
+                <li class="content__li">2020 МГТИ курсы олимпиадной математики</li>
+                <li class="content__li">
+                  Ответственный исполнитель международных образовательных проектов TEMPUS UM JET
+                  23042 «Внедрение системы гарантии качества образования в российских аграрных
+                  вузах» (2004-2005), ТЕМПУС CM-SCM-T031B05-2005 «Распространение системы гарантии
+                  качества образования в российских вузах (DISRUS)» (2006-2008).
+                </li>
+                <li class="content__li">
+                  Разработчик интерактивных авторских курсов, автор методических пособий для
+                  школьников и студентов.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_22 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_22">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/rukosueva-nataliya-vadimovna.png" alt="" />
+              <h5>Рукосуева Наталия Вадимовна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> химия</h3>
+              <h4><span>Педагогический стаж:</span> 15 лет</h4>
+              <h4><span>Образование:</span> МИТХТ им. Ломоносова</h4>
+
+              <ul>
+                <li class="content__li">Учитель первой категории</li>
+                <li class="content__li">АНО ВО МИСАО</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ 2020г</li>
+                <li class="content__li">Ежегодно проходит курсы переподготовки</li>
+                <li class="content__li">Победитель выставки НТТМ-2006</li>
+                <li class="content__li">
+                  Имеет ряд публикаций в отечественных и зарубежных журналах
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_23 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_23">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/divakova-marina-vladimirovna.png" alt="" />
+              <h5>Дивакова Марина Владимировна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> русский язык</h3>
+              <h4><span>Педагогический стаж:</span> 15 лет</h4>
+              <h4><span>Образование:</span> МИТХТ им. Ломоносова</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Доцент МГАВТ. Учитель высшей квалификационной категории.
+                </li>
+                <li class="content__li">Член экспертной комиссии ЕГЭ по русскому языку.</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ с 2006 г по настоящее время</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_24 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_24">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/zolotarev-dmitrij-nikolaevich.png" alt="" />
+              <h5>Золотарев Дмитрий Николаевич</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> математика</h3>
+              <h4><span>Педагогический стаж:</span> 30 лет</h4>
+              <h4>
+                <span>Образование:</span> МГТУ им. Баумана МГУ - аспирантура факультета ВМК, МИЭМ -
+                факультет прикладной математики, МЛТИ - факультет электроники с счетно-решающей
+                техники, ВИРТА - специальность автоматизированные системы управления
+              </h4>
+
+              <ul>
+                <li class="content__li">Заслуженный преподаватель МГУ им. М.В. Ломоносова</li>
+                <li class="content__li">
+                  Уровень подготовки соответствует подготовительным курсам в Вузах.
+                </li>
+                <li class="content__li">
+                  Ученики поступают в МГУ им. М.В. Ломоносова на МЕХМАТ, ВМК, экономическом,
+                  биологическом, и географическом факультетах, в МГТУ им Н.Э. Баумана и пр
+                </li>
+                <li class="content__li">
+                  Специализируется на профильной математике для 10-11 классов
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_25 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_25">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/no_photo.png" alt="" />
+              <h5>Тараканова Елена Камильевна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> русский язык и русский язык как иностранный</h3>
+              <h4><span>Педагогический стаж:</span> 32 года</h4>
+              <h4><span>Образование:</span> Тульский гос. Пед. Институт им. Толстого</h4>
+
+              <ul>
+                <li class="content__li">Кандидат филологических наук.</li>
+                <li class="content__li">
+                  Доцент кафедры «Русский и иностранные языки» Новомосковского института Российского
+                  химико-технологического университета имени Д.И. Менделеева. Опыт работы членом
+                  экспертной комиссии ЕГЭ.
+                </li>
+                <li class="content__li">
+                  Руководитель Центра интернациональной дружбы НИ РХТУ им. Д.И. Менделеева,
+                  руководитель Клуба друзей русского языка на базе кафедры «Русский и иностранные
+                  языки».
+                </li>
+                <li class="content__li">
+                  Награждена Почетными грамотами администрации НИ РХТУ им. Д.И. Менделеева;
+                  Благодарственными письмами Министра культуры Тульской области, Директора
+                  государственного учреждения культуры Тульской области «Объединение центров
+                  развития искусства, народной культуры и туризма».
+                </li>
+
+                <li class="content__li">
+                  Автор и соавтор учебных пособий, научных исследований по русскому языку и
+                  литературе, методике их преподавания русским и иностранным обучающимся, по
+                  культуре русской речи и психолингвистике.
+                </li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__teacher_26 modal__teacher">
+      <div class="modal__wrap modal__teacher_wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close modal__close_26">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal__teacher">
+            <div class="modal__teacher_img">
+              <img src="img/egelskaya-l-a.png" alt="" />
+              <h5>Егельская Людмила Александровна</h5>
+            </div>
+
+            <div class="modal__teacher_info">
+              <h3><span>Дисциплина:</span> химия</h3>
+              <h4><span>Педагогический стаж:</span> 36 лет</h4>
+              <h4><span>Образование:</span> КГУ (КГПИ), аспирантура ЮЗГУ</h4>
+
+              <ul>
+                <li class="content__li">Кандидат химических наук, доцент на кафедре в ЮЗГУ</li>
+                <li class="content__li">Член государственной экзаменационной комиссии</li>
+                <li class="content__li">Эксперт ОГЭ/ЕГЭ</li>
+                <li class="content__li">
+                  Член Проверочной комиссии Всероссийской Олимпиады и вузовских олимпиад
+                </li>
+
+                <li class="content__li">
+                  Ежегодно ученики Л.А. становятся победителями и призерами олимпиад.
+                </li>
+                <li class="content__li">Ежегодно проходит курсы, стажировки в МГУ</li>
+              </ul>
+
+              <button class="button modal__teacher_btn">Записаться на занятие</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sale-form door-form">
+      <div class="container">
+        <div class="sale-form__wrap blue-form__wrap">
+          <h3>Запишитесь на День открытых дверей и бесплатное тестирование</h3>
+          <form class="sale-form__form" action="">
+            <input type="text" placeholder="Имя" name="name" required />
+            <input type="tel" class="phone" placeholder="Телефон" name="phone" required />
+            <button class="button" type="submit">Записаться</button>
+            <p>
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+              соглашаетесь с Политикой конфиденциальности
+            </p>
+          </form>
+          <img src="img/door.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <section class="cost anchor" id="cost">
+      <div class="container">
+        <h2 class="title-main cost-title">
+          Стоимость подготовки <br /><span>к ОГЭ/ЕГЭ 2021</span>
+        </h2>
+
+        <div class="cost__capital">
+          <img src="img/matcap.svg" alt="" />
+          <p>Возможна оплата материнским капиталом</p>
+        </div>
+
+        <div class="cost__arrows"></div>
+        <div class="cost__wrap">
+          <form class="cost__item cost__item-yellow">
+            <h3>ЕГЭ</h3>
+            <p class="cost__item_sub">Количество предметов</p>
+            <div class="cost__item_counter">
+              <button class="cost__item_count-btn cost__item_count-minus" type="button">
+                <svg
+                  width="12"
+                  height="2"
+                  viewBox="0 0 12 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="cost__item_count">1</div>
+              <button class="cost__item_count-btn cost__item_count-plus" type="button">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 6H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 1L6 11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+
+            <button type="button" class="button cost__item_button cost__item_button">
+              Зафиксировать скидку
+            </button>
+          </form>
+
+          <form class="cost__item cost__item-blue">
+            <h3>ОГЭ</h3>
+            <p class="cost__item_sub">Количество предметов</p>
+            <div class="cost__item_counter">
+              <button class="cost__item_count-btn cost__item_count-minus" type="button">
+                <svg
+                  width="12"
+                  height="2"
+                  viewBox="0 0 12 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="cost__item_count">1</div>
+              <button class="cost__item_count-btn cost__item_count-plus" type="button">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 6H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 1L6 11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-purple">
+            <h3>Олимпиада</h3>
+            <p class="cost__item_sub">Количество предметов</p>
+            <div class="cost__item_counter">
+              <button class="cost__item_count-btn cost__item_count-olymp-minus" type="button">
+                <svg
+                  width="12"
+                  height="2"
+                  viewBox="0 0 12 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="cost__item_count">1</div>
+              <button class="cost__item_count-btn cost__item_count-olymp-plus" type="button">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 6H11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 1L6 11"
+                    stroke="#4A4747"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-olymp"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-red">
+            <h3>Интенсив</h3>
+            <p class="cost__item_subtitle cost__item_subtitle-int">16 занятий</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price_intence"><span>24000</span> рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-yellow">
+            <h3>
+              Индивидуальные <br />
+              занятия
+            </h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter--epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-personal">
+              <span>6500</span>рублей/3 ак. ч.
+            </div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-blue">
+            <h3>Начальная школа</h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-elementary"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-purple">
+            <h3>Средняя школа</h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-average"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-red">
+            <h3>Старшая школа</h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-high"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-yellow">
+            <h3>Профориентация</h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-career"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+
+          <form class="cost__item cost__item-blue">
+            <h3>Детский сад</h3>
+            <p class="cost__item_sub">&nbsp;</p>
+            <div class="cost__item_counter-epmty"></div>
+            <div class="cost__item_price-old"><span>10000</span> рублей</div>
+            <div class="cost__item_price cost__item_price-child"><span>6500</span>рублей</div>
+            <div class="cost__item_eco">Экономия <span>3500</span> р</div>
+            <div class="checkbox__wrap">
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__all" />
+                <div class="checkbox__text">Оплата за весь период</div>
+              </label>
+
+              <label class="checkbox">
+                <input type="checkbox" class="checkbox__preference" />
+                <div class="checkbox__text">Есть льгота</div>
+              </label>
+            </div>
+            <button type="button" class="button cost__item_button">Зафиксировать скидку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal cost__modal">
+      <div class="modal__wrap">
+        <div class="modal__content">
+          <button type="button" class="modal__close cost__close">
+            <img src="img/close.svg" alt="" />
+          </button>
+          <div class="modal-cost__wrap">
+            <form class="modal__form" action="#">
+              <h3 class="modal-cost__title"></h3>
+              <input type="text" hidden class="tomailname" value="0" name="subject" />
+              <input type="text" hidden class="tomailcount" value="" name="count" />
+              <input type="text" hidden class="tomailcost" value="" name="cost" />
+              <p class="modal-cost__subjects">Количество предметов: <span></span></p>
+              <p class="modal-cost__price">Стоимость: <span></span></p>
+              <input
+                class="form-control form_input"
+                name="name"
+                required
+                type="text"
+                placeholder="Введите ваше имя"
+              />
+              <input
+                class="form-control form_input phone"
+                name="phone"
+                required
+                type="tel"
+                placeholder="Введите телефон"
+              />
+              <button class="text-uppercase btn-block button" name="submit" type="submit">
+                Зафиксировать
+              </button>
+              <p class="modal__policy">
+                Перед отправкой ознакомьтесь с нашей <a href="#">политикой конфиденциальности</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="licenses anchor" id="licenses">
+      <div class="container">
+        <p class="licenses__suptitle">Документы</p>
+        <h2 class="title-main licenses__title">
+          «Школа Эрудит» <br class="br-mob" />
+          имеет все <br />
+          необходимые лицензии и аккредитацию
+        </h2>
+        <div class="licenses__wrap">
+          <div class="licenses__item">
+            <div class="licenses__item_wrap">
+              <img src="img/lic-1.jpg" alt="" />
+              <a class="licenses__item_download" href="lic_1.pdf" download="">
+                <img src="img/download-btn.svg" alt="" />
+              </a>
+            </div>
+
+            <p>Лицензия на осуществление образовательной деятельности</p>
+          </div>
+
+          <div class="licenses__item">
+            <div class="licenses__item_wrap">
+              <img src="img/lic-2.jpg" alt="" />
+              <a class="licenses__item_download" href="acc.pdf" download="">
+                <img src="img/download-btn.svg" alt="" />
+              </a>
+            </div>
+
+            <p>
+              Свидетельство <br />
+              о государственной аккредитации
+            </p>
+          </div>
+
+          <div class="licenses__item">
+            <div class="licenses__item_wrap">
+              <img src="img/lic-3.jpg" alt="" />
+              <a class="licenses__item_download" href="ustav_s.pdf" download="">
+                <img src="img/download-btn.svg" alt="" />
+              </a>
+            </div>
+
+            <p>Устав образовательного частного учреждения «Школа Эрудит»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="masterclass">
+      <div class="container">
+        <div class="masterclass__wrap">
+          <h2 class="title-main masterclass__title">
+            Запишитесь на <span>бесплатный<br />мастер-класс</span> по русскому языку
+          </h2>
+
+          <p>
+            Каждые выходные приглашаем на мастер-класс по русскому языку <br />
+            от нашего ведущего преподавателя — Растатуевой Светланы Геннадиевны <br />
+            (кандидат филологических наук, эксперт ЕГЭ, готовит на высокие баллы). <br />
+          </p>
+          <p>
+            Приходите проверить себя, посмотреть на уровень преподавания, задать <br />
+            интересующие вопросы по экзамену.
+          </p>
+
+          <div class="masterclass__bottom">
+            <button class="button button__masterclass">Записаться</button>
+            <p>Количество мест ограниченно</p>
+          </div>
+
+          <div class="masterclass__img">
+            <img src="img/masterclass-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="start">
+      <div class="container">
+        <h2 class="title-main start__title">Как начать обучение?</h2>
+        <div class="start__wrap">
+          <div class="start__left">
+            <div class="start__item">
+              <div class="start__item_img">
+                <img src="img/start-1.svg" alt="" />
+              </div>
+              <p>
+                Вы оставляете<br />
+                заявку на сайте
+              </p>
+            </div>
+
+            <div class="start__item">
+              <div class="start__item_img">
+                <img src="img/start-2.svg" alt="" />
+              </div>
+              <p>
+                Проходите бесплатное тестирования<br />
+                для определения уровня знаний
+              </p>
+            </div>
+
+            <div class="start__item">
+              <div class="start__item_img">
+                <img src="img/start-3.svg" alt="" />
+              </div>
+              <p>
+                Записываетесь на бесплатный<br />
+                мастер-класс/день открытых дверей
+              </p>
+            </div>
+
+            <div class="start__item">
+              <div class="start__item_img">
+                <img src="img/start-4.svg" alt="" />
+              </div>
+              <p>
+                Записываетесь в группу по нужному предмету<br />
+                и начинаете подготовку к экзаменам
+              </p>
+            </div>
+
+            <div class="start__item">
+              <div class="start__item_img">
+                <img src="img/start-5.svg" alt="" />
+              </div>
+              <p>
+                Поздравляем с поступлением<br />
+                на бюджет в ВУЗ мечты
+              </p>
+            </div>
+          </div>
+
+          <div class="start__right">
+            <img src="img/start-peoples.svg" alt="" />
+            <h2 class="title-main start__right_title">Учиться с друзьями <span>выгоднее</span></h2>
+            <p>
+              Приводите друга и получайте <br />
+              <span>вознаграждение 2000 рублей</span>
+            </p>
+            <button class="button start__button">Получить скидку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="title-main gallery__title">Фотогалерея «Школы Эрудит»</h2>
+        <div class="gallery__wrap">
+          <div class="gallery__wrap_first">
+            <a data-fancybox="gallery" href="img/gallery-1.jpg" class="gallery__img"
+              ><img src="img/gallery-1.jpg" alt=""
+            /></a>
+            <a data-fancybox="gallery" href="img/gallery-2.jpg" class="gallery__img"
+              ><img src="img/gallery-2.jpg" alt=""
+            /></a>
+          </div>
+          <div class="gallery__wrap_second">
+            <a data-fancybox="gallery" href="img/gallery-3.jpg" class="gallery__img"
+              ><img src="img/gallery-3.jpg" alt=""
+            /></a>
+            <a data-fancybox="gallery" href="img/gallery-4.jpg" class="gallery__img"
+              ><img src="img/gallery-4.jpg" alt=""
+            /></a>
+          </div>
+          <div class="gallery__wrap_third">
+            <a data-fancybox="gallery" href="img/gallery-5.jpg" class="gallery__img"
+              ><img src="img/gallery-5.jpg" alt=""
+            /></a>
+            <a data-fancybox="gallery" href="img/gallery-6.jpg" class="gallery__img"
+              ><img src="img/gallery-6.jpg" alt=""
+            /></a>
+          </div>
+        </div>
+        <button class="button gallery__button">Фотогалерея</button>
+      </div>
+    </section>
+
+    <section id="mastersclass" class="mastersclass mastersclass-new">
+      <div class="container">
+        <div class="mastersclassbox">
+          <h2 class="title-main">
+            Каждые выходные <span>приглашаем на мастер-класс</span> по английскому языку
+          </h2>
+          <div class="mastersclassbox__img">
+            <img src="img/student-masterclass.png" alt="" />
+          </div>
+          <div class="mastersclass-speacker">
+            <div class="mastersclass-speacker__title">Мастер-класс проводит:</div>
+            <div class="mastersclass-speacker__box">
+              <div class="mastersclass-speacker__box-left">
+                <img
+                  src="img/kolobova-anastasiya-aleksandrovna.png  "
+                  alt="Колобова Анастасия Александровна"
+                />
+              </div>
+              <div class="mastersclass-speacker__box-right">
+                <ul class="mastersclass-speacker-lists">
+                  <li class="mastersclass-speacker-lists__item">
+                    <strong>Колобова Анастасия Александровна</strong>
+                  </li>
+                  <li class="mastersclass-speacker-lists__item">
+                    Кандидат филологических наук, эксперт <br />
+                    ОГЭ/ЕГЭ устной и письменной части
+                  </li>
+                  <li class="mastersclass-speacker-lists__item">
+                    Председатель проверочной комиссии Олимпиады
+                  </li>
+                  <li class="mastersclass-speacker-lists__item">
+                    Создатель авторского курса будет разбирать <br />
+                    одну из тем ЕГЭ/ОГЭ
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end -->
+            <p class="mastersclass-des">
+              Приходите, участвуйте, проверьте себя, посмотрите уровень преподавания, пообщайтесь с
+              педагогом. <strong>Можно будет сразу записаться в группу.</strong>
+            </p>
+            <div class="masterclass__bottom">
+              <button class="button button__masterclass">Зписаться</button>
+              <p>Набор ограничен</p>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+
+    <section class="accordition anchor" id="accordition">
+      <div class="container">
+        <h2 class="title-main accordition__title">До сих пор сомневаетесь? Тогда читайте</h2>
+        <div class="accordition__wrap">
+          <div class="accordion js-accordion">
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">
+                Есть ли гарантии того, что, обучаясь у вас, мой <br />
+                ребенок сдаст экзамены на желаемый балл?
+              </div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Мы гарантируем качественную подготовку по любому предмету, ведь все наши педагоги
+                  -опытные эксперты ОГЭ/ЕГЭ, кандидаты наук, председатели комиссий. И мы каждый год
+                  в течение 27 лет показываем высокие показатели учеников. Результат каждого
+                  конкретного ребенка будет зависеть от того, с каким уровнем он к нам пришел,
+                  прошел ли полный курс обучения, не пропускал ли занятия, выполнял ли все
+                  рекомендации и домашние задания педагога. Если ученик серьезно подошел к
+                  подготовке, а родитель поддерживал и направлял его, то с нашими педагогами вместе
+                  мы добьемся желаемого результата.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item js-accordion-item active">
+              <div class="accordion-header js-accordion-header">
+                С какого числа можно записываться в группы?
+              </div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Группы формируются постепенно с 1 октября. Если Вы ещё не нашли подходящую группу,
+                  не переживайте, до начала ноября, мы будем открывать новые. В течение учебного
+                  года, можно заключить договор и подключиться в текущую группу. Мы следим за тем,
+                  чтобы ученик максимально комфортно и безболезненно влился в учебный процесс. Также
+                  существуют группы экспресс-подготовки, рассчитанные на 4-5 месяцев.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">
+                Я хочу попасть к конкретному педагогу. <br />
+                Когда будут его группы и будут ли вообще?
+              </div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Все наши преподаватели хороши в подготовки к экзаменам. Все они индивидуальны в
+                  своей методике обучения, но цель у них одна – подготовить к экзамену. Если Вас
+                  интересует какой-то конкретный преподаватель, то вам нужно подстраивать свое
+                  расписание под его группу или ждать открытие новой. Постараемся согласовать ее на
+                  нужное Вам время.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">
+                Можем ли мы отработать занятия, пропущенные <br />
+                по болезни/спортивным, учебным мероприятиям?
+              </div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  При предоставлении подтверждающего документа о болезни/ об участии в спортивном,
+                  учебном мероприятии пропуски будут компенсированы занятиями в другой группе или
+                  даже по другому предмету.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item js-accordion-item">
+              <div class="accordion-header js-accordion-header">
+                Уже было первое занятие, преподаватель <br />
+                нам не понравился. Что нам делать?
+              </div>
+
+              <div class="accordion-body js-accordion-body">
+                <div class="accordion-body__contents">
+                  Если Вам не понравился преподаватель, то можно записаться в другую группу, даже на
+                  это же время, если такая группа есть в наличии. Преподавателей мы меняем только
+                  после того, как к нам обратятся 2-3 родителя с данной просьбой. Учебная часть
+                  рассматривает каждый случай в индивидуальном порядке. Если есть много нареканий в
+                  сторону педагога, то мы предоставляем другого.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sale-form">
+      <div class="container">
+        <div class="sale-form__wrap">
+          <h3>Получите скидку 20% <br />на подготовку к ОГЭ/ЕГЭ</h3>
+          <form class="sale-form__form" action="">
+            <input type="text" placeholder="Имя" name="name" required />
+            <input type="tel" class="phone" placeholder="Телефон" name="phone" required />
+            <button class="button" type="submit">Записаться</button>
+            <p>
+              Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+              соглашаетесь с Политикой конфиденциальности
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="rewievs anchor" id="rewievs">
+      <div class="container">
+        <h2 class="title-main rewievs__title">Отзывы учеников</h2>
+        <div class="rewievs__count"></div>
+        <div class="rewievs__arrows"></div>
+        <div class="rewievs__wrap">
+          <div class="rewievs__slide">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="img/reviews-1.jpg" alt="" />
+              </div>
+              <div class="reviews__info">
+                <h3>Алексеева Анна</h3>
+                <div class="reviews__score">
+                  <div class="reviews__score_num">
+                    <span>балл егэ</span>
+                    87
+                  </div>
+
+                  <div class="reviews__score_vuz">
+                    <span>вуз</span>
+                    Московский государственный технический университет имени Н.Э. Баумана
+                  </div>
+                </div>
+
+                <div class="reviews__info_text">
+                  Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я выбрала обществознание
+                  и английский. Мы наткнулись на объявление в интернете о том, что идет набор на
+                  курсы подготовки к ЕГЭ. <br />Меня зовут Алексеева Анна, я учусь в 10 классе. В
+                  центре я выбрала обществознание и английский. Мы наткнулись на объявление в
+                  интернете о том, что идет набор на курсы подготовки к ЕГЭ. Меня зовут Алексеева
+                  Анна, я учусь в 10 классе. В центре я выбрала обществознание и английский. Мы
+                  наткнулись на объявление в интернете о том, что идет набор на курсы подготовки к
+                  ЕГЭ.
+                </div>
+
+                <div class="reviews__info_soc">
+                  <a href="#">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/ig.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rewievs__slide">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="img/reviews-1.jpg" alt="" />
+              </div>
+              <div class="reviews__info">
+                <h3>Алексеева Анна</h3>
+                <div class="reviews__score">
+                  <div class="reviews__score_num">
+                    <span>балл егэ</span>
+                    87
+                  </div>
+
+                  <div class="reviews__score_vuz">
+                    <span>вуз</span>
+                    Московский государственный технический университет имени Н.Э. Баумана
+                  </div>
+                </div>
+
+                <div class="reviews__info_text">
+                  Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я выбрала обществознание
+                  и английский. Мы наткнулись на объявление в интернете о том, что идет набор на
+                  курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я
+                  выбрала обществознание и английский. Мы наткнулись на объявление в интернете о
+                  том, что идет набор на курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь
+                  в 10 классе. В центре я выбрала обществознание и английский. Мы наткнулись на
+                  объявление в интернете о том, что идет набор на курсы подготовки к ЕГЭ.
+                </div>
+
+                <div class="reviews__info_soc">
+                  <a href="#">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/ig.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rewievs__slide">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="img/reviews-1.jpg" alt="" />
+              </div>
+              <div class="reviews__info">
+                <h3>Алексеева Анна</h3>
+                <div class="reviews__score">
+                  <div class="reviews__score_num">
+                    <span>балл егэ</span>
+                    87
+                  </div>
+
+                  <div class="reviews__score_vuz">
+                    <span>вуз</span>
+                    Московский государственный технический университет имени Н.Э. Баумана
+                  </div>
+                </div>
+
+                <div class="reviews__info_text">
+                  Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я выбрала обществознание
+                  и английский. Мы наткнулись на объявление в интернете о том, что идет набор на
+                  курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я
+                  выбрала обществознание и английский. Мы наткнулись на объявление в интернете о
+                  том, что идет набор на курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь
+                  в 10 классе. В центре я выбрала обществознание и английский. Мы наткнулись на
+                  объявление в интернете о том, что идет набор на курсы подготовки к ЕГЭ.
+                </div>
+
+                <div class="reviews__info_soc">
+                  <a href="#">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/ig.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rewievs__slide">
+            <div class="reviews__item">
+              <div class="reviews__img">
+                <img src="img/reviews-1.jpg" alt="" />
+              </div>
+              <div class="reviews__info">
+                <h3>Алексеева Анна</h3>
+                <div class="reviews__score">
+                  <div class="reviews__score_num">
+                    <span>балл егэ</span>
+                    87
+                  </div>
+
+                  <div class="reviews__score_vuz">
+                    <span>вуз</span>
+                    Московский государственный технический университет имени Н.Э. Баумана
+                  </div>
+                </div>
+
+                <div class="reviews__info_text">
+                  Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я выбрала обществознание
+                  и английский. Мы наткнулись на объявление в интернете о том, что идет набор на
+                  курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь в 10 классе. В центре я
+                  выбрала обществознание и английский. Мы наткнулись на объявление в интернете о
+                  том, что идет набор на курсы подготовки к ЕГЭ. Меня зовут Алексеева Анна, я учусь
+                  в 10 классе. В центре я выбрала обществознание и английский. Мы наткнулись на
+                  объявление в интернете о том, что идет набор на курсы подготовки к ЕГЭ.
+                </div>
+
+                <div class="reviews__info_soc">
+                  <a href="#">
+                    <img src="img/vk.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="img/ig.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://yandex.ru/profile/1040908683"
+          target="_blank"
+          class="button rewievs__button"
+          >Посмотреть все отзывы</a
+        >
+      </div>
+    </section>
+
+    <section class="addservices">
+      <div class="container">
+        <h2 class="title-main addservices__title">Дополнительные услуги</h2>
+        <div class="addservices__wrap">
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-1.jpg" alt="" />
+            </a>
+            <p>Детский сад</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-2.jpg" alt="" />
+            </a>
+            <p>Онлайн занятия</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-3.jpg" alt="" />
+            </a>
+            <p>Школа с 1 по 11 класс</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-4.jpg" alt="" />
+            </a>
+            <p>Индивидуальные занятия</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-5.jpg" alt="" />
+            </a>
+            <p>Подготовка к декабрьскому сочинению</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-6.jpg" alt="" />
+            </a>
+            <p>Подготовка к Олимпиадам</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-7.jpg" alt="" />
+            </a>
+            <p>Курсы подготовки к ЕГЭ/ОГЭ</p>
+          </div>
+          <div class="addservices__item">
+            <a href="/" class="addservices__item_img">
+              <img src="img/addserv-8.jpg" alt="" />
+            </a>
+            <p>Профориентация</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 class="title-main footer__title">Свяжитесь с нами</h2>
+        <div class="footer__wrap">
+          <div class="footer__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a3e61bfdd5e8ffb07ccc600b630b34687c5664bb8a72cea0964a248c1e03fa8&amp;source=constructor"
+              width="100%"
+              height="100%"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="footer__left">
+            <div class="footer__item">
+              <p>телефон</p>
+              <a href="tel:+74996476002">+7 499 647 60 02</a>
+            </div>
+
+            <div class="footer__item">
+              <p>Электронная почта</p>
+              <a href="mailto:info@erudit.ru">info@erudit.ru</a>
+            </div>
+
+            <div class="footer__item">
+              <p>Таганское отделение</p>
+              <h5>Новорогожская улица, 26с1</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <h3>Или задайте вопрос лично</h3>
+        </div>
+
+        <div class="footer__social">
+          <a class="footer__social_tg" href="https://t.me/erudite_ege_bot" target="_blank"
+            >Написать в Telegram</a
+          >
+          <a
+            class="footer__social_wa"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=79166770362&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5&source=&data=&app_absent="
+            >Написать в WhatsApp</a
+          >
+          <a
+            class="footer__social_ig"
+            target="_blank"
+            href="https://www.instagram.com/erudite.courses/"
+            >Написать в Instagram</a
+          >
+        </div>
+
+        <div class="footer__policy">
+          <p>2020 Все права защищены</p>
+          <a href="#">Политика конфеденциальности</a>
+        </div>
+
+        <button class="up-arrow">
+          <img src="img/up.svg" alt="" />
+        </button>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/readmore.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"
+      integrity="sha512-VpQwrlvKqJHKtIvpL8Zv6819FkTJyE1DoVNH0L2RLn8hUPjRjkS/bCYurZs0DX9Ybwu9oHRHdBZR9fESaq8Z8A=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
